@@ -7,7 +7,7 @@ flag=True
 # 需要缩进
 if flag:
     print("be Careful")
-# 循环，计算阶乘
+# 循环，计算阶乘，交互式输入时需要加入空行以表示完成
 i=1
 sum=1
 while i <= 100:
