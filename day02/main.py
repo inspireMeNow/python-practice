@@ -72,3 +72,29 @@ def http_error(status):
         case _:
             return "Something wrong"
 print(http_error(404))
+class Point:
+    x: int
+    y: int
+def where_is(point):
+    match point:
+        case Point(x=0, y=0):
+            print("Origin")
+        case Point(x=0, y=y):
+            print(f"Y={y}")
+        case Point(x=x,y=0):
+            print(f"X={x}")
+        case Point():
+            print("Somewhere else")
+        case _:
+            print("Not a point")
+var=2
+where_is(Point(1,var))
+# import matplotlib.pyplot as plt
+# import numpy as np
+# plt.style.use('_mpl-gallery')
+# x=np.linspace(0,10,100)
+# y=4+2*np.sin(2*x)
+# fig,ax=plt.subplots()
+# ax.plot(x,y,linewidth=2.0)
+# ax.set(xlim=(0,8),xticks=np.arange(1,8),ylim=(0,8),yticks=np.arange(1,8))
+# plt.show()

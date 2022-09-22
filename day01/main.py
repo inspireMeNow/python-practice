@@ -58,3 +58,62 @@ print(str[:2]+str[2:])
 # str[0]='h'
 # 打印字符串长度
 print(len(str))
+print(type(str))
+list1 = [1,2,3]
+list2 = [3,2,1]
+list2.extend(list1)
+print(list2)
+# 枚举类练习
+from cmath import sqrt
+from email.policy import default
+from enum import Enum
+class Color(Enum):
+    RED = 'red'
+    GREEN = 'green'
+    BLUE = "blue"
+color = 'red'
+# color = Color(input("enter the color"))
+match color:
+    case Color.RED:
+        print("I see red!")
+    case Color.GREEN:
+        print("I see green!")
+    case Color.BLUE:
+        print("I see blue!")
+    case _:
+        print("I see nothing!")
+# 元组练习
+test = (1,2,3,4,5,6)
+print(test.index(6))
+# 字典练习
+dict = {
+    '001': '张三',
+    '002': '李四',
+    '003': '王五'
+}
+print(dict,len(dict))
+print(dict['003'])
+del dict['001']
+print(dict)
+dict['张三'] = '003'
+print(dict)
+if '003' in dict:
+    print(dict['003'])
+a = {'A', 'B', 'C'}
+b = {'D', 'E', 'F'}
+print(a.difference(b))
+print(a-b)
+# 函数练习
+import math
+def fib():
+    for i in range(2,100):
+        flag = 0
+        for j in range(2,int(math.sqrt(i))):
+            if not (i%j):
+                flag=1
+                break
+        if flag==0:
+            print(i,"是素数")
+fib()
+a = 3
+print( a == 3 and 4 )
