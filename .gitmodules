@@ -1,3 +1,6 @@
 [submodule "day07/day07/weiboSpider"]
 	path = day07/day07/weiboSpider
 	url = https://github.com/dataabc/weiboSpider.git
+[submodule "day07/weiboSpider"]
+	path = day07/weiboSpider
+	url = https://github.com/dataabc/weiboSpider
