@@ -4,3 +4,6 @@
 [submodule "day07/weiboSpider"]
 	path = day07/weiboSpider
 	url = https://github.com/dataabc/weiboSpider
+[submodule "day07/weibo/weiboSpider"]
+	path = day07/weibo/weiboSpider
+	url = https://github.com/dataabc/weiboSpider/
