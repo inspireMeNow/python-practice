@@ -8,11 +8,11 @@
 
 </head>
 <body >
-    <div id="5fd6488820c04fabae021ea68e4eb6ad" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="b65f8fa4df4b422aba803861f8fd3013" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_5fd6488820c04fabae021ea68e4eb6ad = echarts.init(
-            document.getElementById('5fd6488820c04fabae021ea68e4eb6ad'), 'white', {renderer: 'canvas'});
-        var option_5fd6488820c04fabae021ea68e4eb6ad = {
+        var chart_b65f8fa4df4b422aba803861f8fd3013 = echarts.init(
+            document.getElementById('b65f8fa4df4b422aba803861f8fd3013'), 'white', {renderer: 'canvas'});
+        var option_b65f8fa4df4b422aba803861f8fd3013 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -40,7 +40,7 @@
             "type": "map",
             "name": "\u57ce\u5e02",
             "label": {
-                "show": true,
+                "show": false,
                 "margin": 8
             },
             "map": "\u5317\u4eac",
@@ -209,7 +209,13 @@
             "datasetIndex": 0,
             "mapValueCalculation": "sum",
             "showLegendSymbol": true,
-            "emphasis": {}
+            "emphasis": {},
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
         }
     ],
     "legend": [
@@ -341,7 +347,7 @@
         ]
     }
 };
-        chart_5fd6488820c04fabae021ea68e4eb6ad.setOption(option_5fd6488820c04fabae021ea68e4eb6ad);
+        chart_b65f8fa4df4b422aba803861f8fd3013.setOption(option_b65f8fa4df4b422aba803861f8fd3013);
     </script>
 </body>
 </html>
